@@ -1,9 +1,9 @@
-from typing import Union, List
+from typing import List
 
 def multiply_elements(
-    elements: List[Union[int, float]], 
-    multiplier: Union[int, float] = 2
-) -> List[Union[int, float]]:
+    elements: list[int | float], 
+    multiplier: int | float = 2
+) -> list[int | float]:
     return [x * multiplier for x in elements]
 
 input_values = input("Введите список чисел через пробел: ").split()
